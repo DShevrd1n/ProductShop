@@ -35,7 +35,13 @@ namespace ProductShopOOP
                                   select u;
             foreach (Client u in selectedClients)
                 Console.WriteLine(u.Name);
-            
+            //LinqGroup
+            Console.WriteLine(new string('_', 50));
+            var clientGroups = sortedClients.GroupBy(p => p.Age)
+                        .Select(g => new { Name = g.Key, Count = g.Count() });
+            foreach (var group in clientGroups)
+                Console.WriteLine($"{group.Name} : {group.Count}");
+
 
 
         }
