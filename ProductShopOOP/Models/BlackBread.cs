@@ -6,13 +6,16 @@ namespace ProductShopOOP.Models
 {
     class BlackBread : Bread
     {
+        
         public BlackBread()
         {
             SubType = BreadSubTypes.Black;
         }
+      
         public override bool IsSpoiled(Product product, DateTime ShelfLife)
         {
             throw new NotImplementedException();
         }
+       
     }
 }

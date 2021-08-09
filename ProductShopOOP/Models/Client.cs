@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 using ProductShopOOP.Abstract;
 using ProductShopOOP.Enums;
 using ProductShopOOP.Interfaces;
@@ -14,9 +15,9 @@ namespace ProductShopOOP.Models
         {
             throw new NotImplementedException();
         }
-        public  void FinishOrder()
-        {
-            throw new NotImplementedException();
-        }
+
+        
+
+        public void FinishOrder() => throw new NotImplementedException();
     }
 }

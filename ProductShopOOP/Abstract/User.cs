@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 using ProductShopOOP.Enums;
 
 
@@ -7,6 +8,7 @@ namespace ProductShopOOP.Abstract
 {
     abstract class User 
     {
+        [JsonIgnore]
         public int Id { get; set; }
         public int Age { get; set; }
 
