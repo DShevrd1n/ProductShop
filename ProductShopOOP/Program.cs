@@ -13,7 +13,7 @@ namespace ProductShopOOP
         {
             string FileName = "clients.json";
             var clients = createClient();
-            string age = "Age";
+            
             Console.WriteLine(clients[0].Role);
             JsonSerialization(FileName, clients);
             Console.WriteLine(File.ReadAllText(FileName));
